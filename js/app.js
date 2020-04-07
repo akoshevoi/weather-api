@@ -68,7 +68,7 @@ for (let i = 0; i < citiesSelectCurrent.options.length; i++) {
 // URL первого города, погода которого появляется при загрузке страницы
 
 let urlCurrentFirst =
-  'http://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+  'https://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
 
 // Запрос для получения данных о текущей погоде первого города, который появляется при первой загрузки страницы
 
@@ -125,7 +125,7 @@ for (let i = 0; i < citiesSelectCurrent.options.length; ++i) {
 
     // Составляющие нового URL запроса в зависимости от ID выбранного города
 
-    let urlStartCurrent = 'http://api.openweathermap.org/data/2.5/weather?id='; // начало URL запроса
+    let urlStartCurrent = 'https://api.openweathermap.org/data/2.5/weather?id='; // начало URL запроса
     let urlEndCurrent = '&lang=ru&appid=b010510360a862e7c19ce5de7e28216f'; // конец URL запроса
     let newUrlCurrent = urlStartCurrent + cityIdentCurrent + urlEndCurrent; // собранный новый URL запрос
 
@@ -212,7 +212,7 @@ for (let i = 0; i < citiesSelectForecast.options.length; i++) {
 // URL первого города, погода которого появляется при загрузке страницы
 
 let url =
-  'http://api.openweathermap.org/data/2.5/forecast?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+  'https://api.openweathermap.org/data/2.5/forecast?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
 
 // Запрос для получения данных о прогнозе погоды первого города, который появляется при первой загрузки страницы
 
@@ -448,7 +448,7 @@ for (let i = 0; i < citiesSelectForecast.options.length; ++i) {
 
     // Составляющие нового URL зпроса в зависимости от ID выбранного города
 
-    let urlStart = 'http://api.openweathermap.org/data/2.5/forecast?id='; // начало URL запроса
+    let urlStart = 'https://api.openweathermap.org/data/2.5/forecast?id='; // начало URL запроса
     let urlEnd = '&lang=ru&appid=b010510360a862e7c19ce5de7e28216f'; // конец URL запроса
     let newUrl = urlStart + cityIdent + urlEnd; // собранный новый URL запрос
 
