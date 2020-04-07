@@ -67,8 +67,15 @@ for (let i = 0; i < citiesSelectCurrent.options.length; i++) {
 
 // URL первого города, погода которого появляется при загрузке страницы
 
-let urlCurrentFirst =
-  'https://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+let urlCurrentFirst;
+
+if (location.protocol === 'http:') {
+  urlCurrentFirst =
+    'http://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+} else {
+  urlCurrentFirst =
+    'https://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+}
 
 // Запрос для получения данных о текущей погоде первого города, который появляется при первой загрузки страницы
 
@@ -211,8 +218,15 @@ for (let i = 0; i < citiesSelectForecast.options.length; i++) {
 
 // URL первого города, погода которого появляется при загрузке страницы
 
-let url =
-  'https://api.openweathermap.org/data/2.5/forecast?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+let url;
+
+if (location.protocol === 'http:') {
+  url =
+    'http://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+} else {
+  url =
+    'https://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+}
 
 // Запрос для получения данных о прогнозе погоды первого города, который появляется при первой загрузки страницы
 
