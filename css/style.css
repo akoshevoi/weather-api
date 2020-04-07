@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  background-image: url("../img/background46.png");
+
+  color: #000;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+hr {
+  border-width: 3px;
+  border-color: #2b7cd2;
+  border-style: double;
+}
+
+.main-title {
+  margin: 30px 0;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  color: #2d45bf;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.container--forecast {
+  max-width: 1400px;
+}
+
+/* Current & Forecast, Current  */
+
+.current, 
+.forecast {
+  padding: 30px 0;
+}
+
+.current {
+  background-color: rgba(90, 174, 253, 0.2);
+}
+
+.forecast {
+  background-color: rgba(3, 80, 182, 0.2);
+}
+
+.current__title, 
+.forecast__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #2d45bf;
+}
+
+.current__inner, 
+.forecast__inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 40px 0;
+}
+
+.current__inner {
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast__inner {
+  flex-direction: column;
+}
+
+.current__cities, 
+.forecast__cities {
+  text-align: center;
+}
+
+.current__cities {
+  width: 50%;
+}
+
+.forecast__cities {
+  margin: 30px 0;
+}
+
+.current__cities-label, 
+.forecast__cities-label {
+  font-weight: 700;
+}
+
+.current__cities-select, 
+.forecast__cities-select {
+  margin: 15px;
+  padding: 10px 200px 10px 5px;
+    
+  font-family: inherit;
+  font-size: 16px;
+
+  border: 2px solid #5aaefd;
+  border-radius: 5px;
+}
+
+.current__cities-select:focus,
+.forecast__cities-select:focus {
+  outline: 0;
+  border-color:darkblue;
+}
+
+.current__weather {
+  width: 50%;
+}
+
+.current__item, 
+.forecast__column {
+  min-width: 300px;
+  padding: 20px;
+
+  text-align: center;
+  border: 1px solid #777;
+  border-radius: 15px;
+  background-image: radial-gradient(circle, #d0f3ff, #b0d3ff);
+  box-shadow: 0 0 10px #75b3ff;
+}
+
+.current__item {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.current__city {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.current__degree, 
+.forecast__degree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 35px;
+  font-weight: 700;
+}
+
+
+/* Forecast */
+.forecast__city {
+  margin: 10px 0 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #2d45bf;
+}
+
+.forecast__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast__column {
+  margin: 25px;
+}
+
+.forecast__day,
+.forecast__month,
+.forecast__time {
+  font-size: 20px;
+}
+
+.forecast__date {
+  margin: 10px 0;
+  font-size: 50px;
+}
+
+.forecast__month {
+  text-transform: lowercase;
+}
+
+.forecast__time {
+  margin-top: 10px;
+}
+
+
+/* Media */
+
+/* Max-width 1200px */
+@media(max-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+/* Max-width 1200px */
+@media(max-width: 990px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+/* Max-width 770px */
+@media(max-width: 770px) {
+  .container {
+    max-width: 730px;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  .current__cities {
+    width: 40%;
+  }
+
+  .current__weather {
+    width: 60%;
+  }
+
+  .current__cities-select, 
+  .forecast__cities-select {
+    padding: 10px 70px 10px 5px;
+  }
+
+  .current__item {
+    max-width: 350px;
+  }
+
+  .forecast__city {
+    font-size: 40px;
+  }
+}
+
+/* Max-width 575px */
+@media(max-width: 575px) {
+  .container {
+    max-width: 535px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .current__title, 
+  .forecast__title {
+    font-size: 18px;
+  }
+
+  .current__cities-select,
+  .forecast__cities-select {
+    padding: 10px 130px 10px 5px;
+  }
+
+  .forecast__cities-select {
+    width: 70%;
+  }
+
+  .current__cities, 
+  .current__weather{
+    width: 100%;
+  }
+
+  .current__item {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .forecast__city {
+    font-size: 30px;
+  }
+}
+
+
+/* Max-width 470px */
+@media(max-width: 470px) {
+  .main-title {
+    font-size: 23px;
+  }
+
+  .forecast__title {
+    font-size: 16px;
+  }
+}
