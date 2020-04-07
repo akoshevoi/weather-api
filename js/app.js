@@ -222,10 +222,10 @@ let url;
 
 if (location.protocol === 'http:') {
   url =
-    'http://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+    'http://api.openweathermap.org/data/2.5/forecast?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
 } else {
   url =
-    'https://api.openweathermap.org/data/2.5/weather?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
+    'https://api.openweathermap.org/data/2.5/forecast?id=703448&lang=ru&appid=b010510360a862e7c19ce5de7e28216f';
 }
 
 // Запрос для получения данных о прогнозе погоды первого города, который появляется при первой загрузки страницы
@@ -237,6 +237,8 @@ fetch(url)
   .then(function (data) {
     // Создаем пустой объект, в котором будет хранится информация о погоде.
     let cityWeather = {};
+
+    console.log(data);
 
     // Перебираем объект data и добавляем в объект cityWeather ключ с названием города
 
