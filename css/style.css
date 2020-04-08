@@ -121,7 +121,6 @@ hr {
 
 .current__item, 
 .forecast__column {
-  min-width: 300px;
   padding: 20px;
 
   text-align: center;
@@ -131,7 +130,9 @@ hr {
   box-shadow: 0 0 10px #75b3ff;
 }
 
+
 .current__item {
+  min-width: 300px;
   max-width: 400px;
   margin: 0 auto;
 }
