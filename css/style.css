@@ -169,7 +169,8 @@ hr {
 }
 
 .forecast__column {
-  margin: 25px;
+  width: 320px;  
+  margin: 15px;
 }
 
 .forecast__day,
